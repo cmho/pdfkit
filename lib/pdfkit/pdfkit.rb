@@ -76,7 +76,7 @@ class PDFKit
 
   def to_file(path)
     self.to_pdf(path)
-    File.new(path)
+    File.new(path, "wb+")
   end
 
   protected
